@@ -54,10 +54,10 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
+			'host'      => 'server.edmundophie.com',
 			'database'  => 'umbara_ticketing',
-			'username'  => 'root',
-			'password'  => '',
+			'username'  => 'edmund',
+			'password'  => '123',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
