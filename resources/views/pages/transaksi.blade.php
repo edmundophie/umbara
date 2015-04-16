@@ -27,10 +27,10 @@
 						<input type="number" class="form-control">
 					</div>
 				</div>
-				<div class="form-group">
-					<div class="col-sm-offset-4 col-sm-3">
-						<button type="submit" class="btn btn-block btn-theme">Cari</button>
-					</div>
+        <div class="col-sm-offset-4 col-sm-3">
+						<button type="submit" class="btn btn-theme">Cari</button>
+          </div>
+          <div class="clearfix"></div>
 				</div>
 			</div>
 			</div>

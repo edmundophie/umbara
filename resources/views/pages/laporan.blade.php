@@ -29,10 +29,7 @@
 						<input type="date" class="form-control" placeholder="Alamat" required>
 					</div>
 				</div>
-				<div class="form-group btn-submit">
-					<div class="col-sm-offset-3 col-sm-9">
-						<button type="submit" class="btn btn-theme">Tampilkan Laporan</button>
-					</div>
+				<button type="submit" class="col-sm-offset-3 btn btn-theme">Tampilkan Laporan</button>
 				</div>
 			</div><!-- /form-panel END DIV MIDDLE -->
 	    </div><!-- /col-lg-6 END SECTION MIDDLE -->

@@ -42,10 +42,7 @@
 						<input type="text" class="form-control" placeholder="Nomor telepon" required>
 					</div>
 				</div>
-				<div class="form-group btn-submit">
-					<div class="col-sm-offset-3 col-sm-9">
-						<button type="submit" class="btn btn-theme">Proses Transaksi</button>
-					</div>
+				<button type="submit" class="col-sm-offset-3 btn btn-theme">Update Customer</button>
 				</div>
 			</div><!-- /form-panel END DIV MIDDLE -->
 	    </div><!-- /col-lg-6 END SECTION MIDDLE -->

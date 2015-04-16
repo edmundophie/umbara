@@ -98,7 +98,7 @@
 							</div>
 						</div>
 
-						<button type="submit" class="btn btn-theme">Proses Transaksi</button>
+						<button type="submit" class="col-sm-offset-3 btn btn-theme">Proses Transaksi</button>
 				</div><!-- /form-panel END DIV MIDDLE -->
 		    </div><!-- /col-lg-6 END SECTION MIDDLE -->
 		    </form>
