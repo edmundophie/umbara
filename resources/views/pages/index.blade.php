@@ -11,39 +11,44 @@
    	<h3><i class="fa fa-angle-right"></i> Pembelian Tiket</h3>
 		
 		<div class="row mt">
-			<form class="form-horizontal style-form" method="get">
+
+
+            {!! Form::open(array('url' => 'tiket/insert', 'class' => 'form-horizontal style-form', 'method' => 'post')) !!}
 		    <div class="col-lg-6">
 		    	<div class="form-panel">
-						<div class="form-group">
+
+                        <div class="form-group">
 							<label class="col-sm-3 control-label">Nama</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" required>
+								<input type="text" class="form-control" name="nama" required>
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="col-sm-3 control-label">Alamat</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" required>
+								<input type="text" class="form-control" name="alamat" required>
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="col-sm-3 control-label">Telepon</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" required>
+								<input type="text" class="form-control" name="telepon" required>
 							</div>
 						</div>
 						<div>
 							<h4 style="margin-bottom:0">Total harga</h4>
 							<h2 style="margin-top:0">Rp 150.000</h2>
 						</div>
+
 				</div><!-- /form-panel END DIV MIDDLE -->
 		    </div><!-- /col-lg-6 END SECTION MIDDLE -->
+
 			 <div class="col-lg-6">
 		    	<div class="form-panel">
 						<div class="form-group">
 							<label class="col-sm-3 control-label">Jenis</label>
 							<div class="col-sm-9">
-								<select name="" id="" class="form-control">
+								<select name="jenis" id="" class="form-control">
 									<option value="Pembelian">Pembelian</option>
 									<option value="Pemesanan">Pemesanan</option>
 								</select>
@@ -76,18 +81,18 @@
 							<div class="col-sm-9">
 								<select name="" id="" class="form-control">
 									<option value="1">1 kursi</option>
-									<option value="1">2 kursi</option>
-									<option value="1">3 kursi</option>
-									<option value="1">4 kursi</option>
-									<option value="1">5 kursi</option>
-									<option value="1">6 kursi</option>
-									<option value="1">7 kursi</option>
-									<option value="1">8 kursi</option>
-									<option value="1">9 kursi</option>
-									<option value="1">10 kursi</option>
-									<option value="1">11 kursi</option>
-									<option value="1">12 kursi</option>
-									<option value="1">13 kursi</option>
+									<option value="2">2 kursi</option>
+									<option value="3">3 kursi</option>
+									<option value="4">4 kursi</option>
+									<option value="5">5 kursi</option>
+									<option value="6">6 kursi</option>
+									<option value="7">7 kursi</option>
+									<option value="8">8 kursi</option>
+									<option value="9">9 kursi</option>
+									<option value="10">10 kursi</option>
+									<option value="11">11 kursi</option>
+									<option value="12">12 kursi</option>
+									<option value="13">13 kursi</option>
 								</select>
 							</div>
 						</div>
@@ -98,10 +103,17 @@
 							</div>
 						</div>
 
-						<button type="submit" class="col-sm-offset-3 btn btn-theme">Proses Transaksi</button>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+						        <button type="submit" class="col-sm-offset-3 btn btn-theme">Proses Transaksi</button>
+						    </div>
+						</div>
 				</div><!-- /form-panel END DIV MIDDLE -->
 		    </div><!-- /col-lg-6 END SECTION MIDDLE -->
-		    </form>
+		    {!! Form::close() !!}
+
+
+
 		</div><!--/row -->
 	</section>
 </section>

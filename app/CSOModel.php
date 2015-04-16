@@ -6,4 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class CSOModel extends Model{
     protected $table = 'cso';
+    public $timestamps = false;
 } 
