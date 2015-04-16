@@ -3,7 +3,6 @@
   UMBARA - Ticketing System
 @stop
 @section('header')
-	<link rel="stylesheet" href="{{URL::asset('css/customer.css')}}">
 @stop
 @section('customer-menu-status')
 	active
