@@ -35,6 +35,7 @@
 					</div>
 				</div>
 				<button type="submit" class="col-sm-offset-3 btn btn-theme">Simpan</button>
+				
 			</div><!-- /form-panel END DIV MIDDLE -->
 	    </div><!-- /col-lg-6 END SECTION MIDDLE -->
     	</form>

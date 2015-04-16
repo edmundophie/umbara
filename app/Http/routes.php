@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'PagesController@login');
 
-Route::get('login', 'PagesController@login');
+Route::get('beli', 'PagesController@index');
 
 Route::get('customer', 'PagesController@customer');
 
