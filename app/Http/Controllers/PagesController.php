@@ -2,17 +2,12 @@
 
 use App\Http\Requests;
 
-use Illuminate\Http\Request;
-
-use Illuminate\Support\Facades\Session;
-use Illuminate\Support\Str;
-
 class PagesController extends Controller {
 	public function index() {
 		return view('pages.index');
 	}
 
-	public function login() {
+    public function login() {
 		return view('pages.login');
 	}
 
