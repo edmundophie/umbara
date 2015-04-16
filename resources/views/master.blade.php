@@ -22,6 +22,7 @@
     <link href="{{ URL::asset('css/style-responsive.css') }}" rel="stylesheet">
 
     <script src="{{ URL::asset('js/chart-master/Chart.js') }}"></script>
+    @yield('header')
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -65,42 +66,42 @@
               	  <h5 class="centered">UMBARA</h5>
               	  
                   <li class="mt">
-                      <a href="index.html">
+                      <a href="/" class="@yield('pembelian-menu-status')">
                           <i class="fa fa-ticket"></i>
                           <span>Pembelian Tiket</span>
                       </a>
                   </li>
 
                   <li class="sub-menu">
-                      <a href="index.html">
+                      <a href="customer" class="@yield('customer-menu-status')">
                           <i class="fa fa-user"></i>
                           <span>Customer</span>
                       </a>
                   </li>
 
                   <li class="sub-menu">
-                      <a href="index.html">
+                      <a href="transaksi" class="@yield('transaksi-menu-status')">
                           <i class="fa fa-credit-card"></i>
                           <span>Transaksi</span>
                       </a>
                   </li>
         
                   <li class="sub-menu">
-                      <a href="index.html">
+                      <a href="laporan" class="@yield('laporan-menu-status')">
                           <i class="fa fa-file-pdf-o"></i>
                           <span>Laporan</span>
                       </a>
                   </li>
         
                   <li class="sub-menu">
-                      <a href="index.html">
+                      <a href="pengeluaran" class="@yield('pengeluaran-menu-status')">
                           <i class="fa fa-book"></i>
                           <span>Pengeluaran</span>
                       </a>
                   </li>
         
                   <li class="sub-menu">
-                      <a href="index.html">
+                      <a href="pengaturan" class="@yield('pengaturan-menu-status')">
                           <i class="fa fa-gear"></i>
                           <span>Pengaturan</span>
                       </a>
@@ -115,11 +116,7 @@
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
-      <section id="main-content">
-          <section class="wrapper">
-              @yield('main-content')
-          </section>
-      </section>
+      @yield('main-content')
 
       <!--main content end-->
       <!--footer start-->
@@ -209,7 +206,7 @@
             console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
         }
     </script>
-  
+    @yield('footer')
 
   </body>
 </html>

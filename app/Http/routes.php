@@ -13,6 +13,18 @@
 
 Route::get('/', 'PagesController@index');
 
+Route::get('login', 'PagesController@login');
+
+Route::get('customer', 'PagesController@customer');
+
+Route::get('transaksi', 'PagesController@transaksi');
+
+Route::get('laporan', 'PagesController@laporan');
+
+Route::get('pengeluaran', 'PagesController@pengeluaran');
+
+Route::get('pengaturan', 'PagesController@pengaturan');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
