@@ -66,42 +66,42 @@
               	  <h5 class="centered">UMBARA</h5>
               	  
                   <li class="mt">
-                      <a href="/" class="@yield('pembelian-menu-status')">
+                      <a href="{{URL::to('/')}}" class="@yield('pembelian-menu-status')">
                           <i class="fa fa-ticket"></i>
                           <span>Pembelian Tiket</span>
                       </a>
                   </li>
 
                   <li class="sub-menu">
-                      <a href="customer" class="@yield('customer-menu-status')">
+                      <a href="{{URL::to('customer')}}" class="@yield('customer-menu-status')">
                           <i class="fa fa-user"></i>
                           <span>Customer</span>
                       </a>
                   </li>
 
                   <li class="sub-menu">
-                      <a href="transaksi" class="@yield('transaksi-menu-status')">
+                      <a href="{{URL::to('transaksi')}}" class="@yield('transaksi-menu-status')">
                           <i class="fa fa-credit-card"></i>
                           <span>Transaksi</span>
                       </a>
                   </li>
         
                   <li class="sub-menu">
-                      <a href="laporan" class="@yield('laporan-menu-status')">
+                      <a href="{{URL::to('laporan')}}" class="@yield('laporan-menu-status')">
                           <i class="fa fa-file-pdf-o"></i>
                           <span>Laporan</span>
                       </a>
                   </li>
         
                   <li class="sub-menu">
-                      <a href="pengeluaran" class="@yield('pengeluaran-menu-status')">
+                      <a href="{{URL::to('pengeluaran')}}" class="@yield('pengeluaran-menu-status')">
                           <i class="fa fa-book"></i>
                           <span>Pengeluaran</span>
                       </a>
                   </li>
         
                   <li class="sub-menu">
-                      <a href="pengaturan" class="@yield('pengaturan-menu-status')">
+                      <a href="{{URL::to('pengaturan')}}" class="@yield('pengaturan-menu-status')">
                           <i class="fa fa-gear"></i>
                           <span>Pengaturan</span>
                       </a>

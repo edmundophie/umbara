@@ -18,16 +18,16 @@ class Tiket {
         $this->dataTiket = TiketModel::where('id', $idTiket)->first();
 
         $this->pelanggan = new Pelanggan();
-        $this->pelanggan->setPelanggan($this->pelanggan['id_pelanggan']);
+        $this->pelanggan->setPelanggan($this->dataTiket['id_pelanggan']);
 
         $this->status = new Status();
-        $this->status->setStatus($this->pelanggan['id_status']);
+        $this->status->setStatus($this->dataTiket['id_status']);
 
         $this->harga = new Harga();
-        $this->harga->setHarga($this->pelanggan['id_harga']);
+        $this->harga->setHarga($this->dataTiket['id_harga']);
 
         $this->cso = new CSO();
-        $this->cso->setCSO($this->pelanggan['username_cso']);
+        $this->cso->setCSO($this->dataTiket['username_cso']);
     }
 
     public function getDataTiket(){

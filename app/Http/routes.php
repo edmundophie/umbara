@@ -11,6 +11,7 @@
 |
 */
 
+// Main Pages
 Route::get('/', 'PagesController@index');
 
 Route::get('login', 'PagesController@login');
@@ -25,9 +26,9 @@ Route::get('pengeluaran', 'PagesController@pengeluaran');
 
 Route::get('pengaturan', 'PagesController@pengaturan');
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
-
+// Other Pages
 Route::post('/tiket/insert', 'TiketController@insert');
+
+Route::get('/tiket/searchById', 'TiketController@searchById');
+
+Route::get('/tiket/searchByDate', 'TiketController@searchByDate');

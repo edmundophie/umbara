@@ -13,10 +13,12 @@ use App\Pelanggan;
 use App\PelangganModel;
 use App\StatusModel;
 use App\Tiket;
+use App\TiketModel;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
+use DB;
 
 class TiketController extends Controller {
 
@@ -69,4 +71,28 @@ class TiketController extends Controller {
         }
     }
 
+    public function searchById(Request $request) {
+        $transaksi = TiketModel::where('id', $request->input('id_transaksi'))->first();
+        if(count($transaksi)>0) {
+            $tiket = new Tiket();
+            $tiket->setTiket($transaksi['id']);
+            $arr_tiket[0] = $tiket;
+        }
+        return view('pages.transaksi', compact('arr_tiket'));
+    }
+
+    public function searchByDate(Request $request) {
+        $tanggal = date('Y-m-d', strtotime($request->input('tanggal')));
+        $transaksi = TiketModel::where(DB::raw("DATE_FORMAT(tanggal_pemesanan, '%Y-%m-%d')"), $tanggal)->get();
+        
+        $i=0;
+        $arr_tiket;
+        foreach($transaksi as $tiket) {
+            $temp = new Tiket();
+            $temp->setTiket($tiket['id']);
+            $arr_tiket[$i] = $temp;
+            ++$i;
+        }
+        return view('pages.transaksi', compact('arr_tiket'));
+    }
 } 
