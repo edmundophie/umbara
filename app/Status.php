@@ -5,12 +5,9 @@ namespace App;
 class Status {
     private $dataStatus;
 
-    public function __construct(){
-
-    }
 
     public function setStatus($idStatus){
-        $this->dataStatus = StatusModel::where('id', $idStatus);
+        $this->dataStatus = StatusModel::where('id', $idStatus)->first();
     }
 
     public function getDataStatus(){

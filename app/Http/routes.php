@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', 'PagesController@index');
+// Main pages
+Route::get('/', 'PagesController@login');
 
-Route::get('login', 'PagesController@login');
+Route::get('beli', 'PagesController@index');
 
 Route::get('customer', 'PagesController@customer');
 
@@ -25,13 +26,16 @@ Route::get('pengeluaran', 'PagesController@pengeluaran');
 
 Route::get('pengaturan', 'PagesController@pengaturan');
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+// Other Pages
+Route::post('/tiket/insert', 'TiketController@insert');
 
 Route::post('/tiket/insert', 'TiketController@insert');
 
 Route::post('/customer/search', 'PagesController@search');
 
 Route::post('/customer/update', 'PagesController@update');
+
+Route::get('/tiket/searchById', 'TiketController@searchById');
+
+Route::get('/tiket/searchByDate', 'TiketController@searchByDate');
+
