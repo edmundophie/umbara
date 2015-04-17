@@ -154,7 +154,7 @@
                   </tr>
                   <tr>
                     <td><strong>Tgl Keberangkatan</strong></td>
-                    <td>{{$tiket->getDataTiket()['tgl_keberangkatan']}}</td>
+                    <td>{{$tiket->getDataTiket()['tanggal_keberangkatan']}}</td>
                   </tr>
                   <tr>
                     <td><strong>Jam Keberangkatan</strong></td>

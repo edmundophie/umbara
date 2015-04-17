@@ -57,7 +57,7 @@ class TiketController extends Controller {
         $tiket->setIdHarga(HargaModel::where('deskripsi', $this->dateChecker($tanggal))->first()['id']);
         $tiket->save();
 
-        return redirect('transaksi');
+        return redirect('pages.transaksi');
     }
 
     public function dateChecker($date){

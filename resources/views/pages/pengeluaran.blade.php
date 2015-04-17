@@ -19,13 +19,13 @@
 				<div class="form-group">
 					<label class="col-sm-3 control-label">Jumlah pengeluaran</label>
 					<div class="col-sm-9">
-						<input type="number" class="form-control" placeholder="Jumlah pengeluaran" required>
+						<input type="number" name="jumlah" id="jumlah" class="form-control" placeholder="Jumlah pengeluaran" required>
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="col-sm-3 control-label">Rincian pengeluaran</label>
 					<div class="col-sm-9">
-						<textarea name="" id="" class="form-control"></textarea>
+						<textarea name="rincian" id="rincian" class="form-control"></textarea>
 					</div>
 				</div>
 				<div class="form-group">
@@ -35,6 +35,7 @@
 					</div>
 				</div>
 				<button type="submit" class="col-sm-offset-3 btn btn-theme">Simpan</button>
+				
 			</div><!-- /form-panel END DIV MIDDLE -->
 	    </div><!-- /col-lg-6 END SECTION MIDDLE -->
     	</form>

@@ -32,4 +32,8 @@ class TiketModel extends Model{
     public function getJamKeberangkatanAttribute() {
         return date('H:i', strtotime($this->attributes['jam_keberangkatan']));
     }
+
+    public function getTanggalKeberangkatanAttribute() {
+        return date('d M Y', strtotime($this->attributes['tanggal_keberangkatan']));
+    }
 } 

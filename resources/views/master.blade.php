@@ -66,7 +66,7 @@
               	  <h5 class="centered">UMBARA</h5>
               	  
                   <li class="mt">
-                      <a href="{{URL::to('/')}}" class="@yield('pembelian-menu-status')">
+                      <a href="{{URL::to('beli')}}" class="@yield('pembelian-menu-status')">
                           <i class="fa fa-ticket"></i>
                           <span>Pembelian Tiket</span>
                       </a>
