@@ -31,3 +31,7 @@ Route::controllers([
 ]);
 
 Route::post('/tiket/insert', 'TiketController@insert');
+
+Route::post('/customer/search', 'PagesController@search');
+
+Route::post('/customer/update', 'PagesController@update');

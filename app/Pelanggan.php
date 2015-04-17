@@ -37,4 +37,12 @@ class Pelanggan {
         $pelanggan->telepon = $this->dataPelanggan['telepon'];
         $pelanggan->save();
     }
+
+    public static function update($id, $nama, $telepon, $alamat){
+        $pelanggan = PelangganModel::where('id', $id)->first();
+        $pelanggan->nama = $nama;
+        $pelanggan->telepon = $telepon;
+        $pelanggan->alamat = $alamat;
+        $pelanggan->save();
+    }
 } 
